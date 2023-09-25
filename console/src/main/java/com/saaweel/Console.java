@@ -34,27 +34,27 @@ public class Console {
 
 		if (args.length > 0) {
 			switch (args[0]) {
-			case "ls":
-				console.ls();
-				break;
-			case "cp":
-				console.cp();
-				break;
-			case "mv":
-				console.mv();
-				break;
-			case "rm":
-				console.rm();
-				break;
-			case "mkdir":
-				console.mkdir();
-				break;
-			case "touch":
-				console.touch();
-				break;
-			case "grep":
-				console.grep();
-				break;
+				case "ls":
+					console.ls();
+					break;
+				case "cp":
+					console.cp();
+					break;
+				case "mv":
+					console.mv();
+					break;
+				case "rm":
+					console.rm();
+					break;
+				case "mkdir":
+					console.mkdir();
+					break;
+				case "touch":
+					console.touch();
+					break;
+				case "grep":
+					console.grep();
+					break;
 			}
 		}
 	}
