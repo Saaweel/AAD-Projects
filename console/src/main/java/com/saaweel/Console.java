@@ -38,25 +38,33 @@ public class Console {
 
 		Path dir = Paths.get(path);
 
-		if (Files.isDirectory(dir)) {
-			System.out.println(Color.GREEN + "Directorio " + Color.ORANGE + path + Color.RESET);
-			System.out.println("--------------------------------------------------");
-			
-			try {
-				DirectoryStream<Path> stream = Files.newDirectoryStream(dir);
+		if (Files.exists(dir)) {
+			if (Files.isDirectory(dir)) {
+				System.out.println(Color.GREEN + "Directorio " + Color.ORANGE + path + Color.RESET);
+				System.out.println("--------------------------------------------------");
+				
+				try {
+					DirectoryStream<Path> stream = Files.newDirectoryStream(dir);
 
-				for (Path file : stream) {
-					if (Files.isDirectory(file)) {
-						System.out.println(Color.BLUE + file.getFileName() + Color.RESET);
-					} else {
-						System.out.println(file.getFileName());
+					for (Path file : stream) {
+						if (Files.isDirectory(file)) {
+							System.out.println(Color.BLUE + file.getFileName() + Color.RESET);
+						} else {
+							System.out.println(file.getFileName());
+						}
 					}
+				} catch (Exception e) {
+					System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
 				}
-			} catch (Exception e) {
-				System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
+			} else {
+				System.out.println(Color.GREEN + "Archivo " + Color.ORANGE + path + Color.RESET);
+				System.out.println("--------------------------------------------------");
+				System.out.println("Nombre: " + dir.getFileName());
+				System.out.println("Tamaño: " + dir.toFile().length() + " bytes");
+				System.out.println("Ruta: " + dir.getParent());
 			}
 		} else {
-			System.out.println(Color.RED + "Error: " + path + " no es un directorio" + Color.RESET);
+			System.out.println(Color.RED + "Error: " + path + " no es un fichero ni directorio" + Color.RESET);
 		}
 	}
 
