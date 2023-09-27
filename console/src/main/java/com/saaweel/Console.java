@@ -1,5 +1,6 @@
 package com.saaweel;
 
+import java.io.File;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -59,8 +60,30 @@ public class Console {
 		}
 	}
 
-	public void mv(){
-		
+	public void mv(String fromFile, String toDirectory){
+		Path from = Paths.get(fromFile);
+
+		if (Files.exists(from)) {
+			Path to = Paths.get(toDirectory);
+
+			if (Files.isDirectory(to)) {
+				try {
+					Files.move(from, to.resolve(from.getFileName()));
+					System.out.println(Color.GREEN + "Archivo copiado" + Color.RESET);
+				} catch (Exception e) {
+					System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
+				}
+			} else {
+				try {
+					from.toFile().renameTo(new File(from.getParent().toString() + "/" + toDirectory));
+					System.out.println(Color.GREEN + "Archivo renombrado" + Color.RESET);
+				} catch (Exception e) {
+					System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
+				}
+			}
+		} else {
+			System.out.println(Color.RED + "Error: " + fromFile + " no existe" + Color.RESET);
+		}
 	}
 
 	public void rm(){
@@ -112,7 +135,10 @@ public class Console {
 							System.out.println(Color.RED + "Error de formato: cp <archivo> <directorio>" + Color.RESET);
 						break;
 					case "mv":
-						console.mv();
+						if (args.length == 3)
+							console.mv(args[1], args[2]);
+						else
+							System.out.println(Color.RED + "Error de formato: mv <archivo> <directorio/nombre>" + Color.RESET);
 						break;
 					case "rm":
 						console.rm();
