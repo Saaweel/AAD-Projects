@@ -190,7 +190,7 @@ public class Console {
 		System.out.println("");
 
 		do {
-			System.out.print(Color.GREEN + "saaweel@saaweel: " + Color.CYAN + System.getProperty("user.dir") + Color.RESET + "$ ");
+			System.out.print(Color.GREEN + System.getProperty("user.name") + "@" + System.getProperty("user.name") +": " + Color.CYAN + System.getProperty("user.dir") + Color.RESET + "$ ");
 			msg = readS.nextLine();
 			args = msg.split(" ");
 
