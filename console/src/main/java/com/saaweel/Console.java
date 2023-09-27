@@ -145,7 +145,7 @@ public class Console {
 				Files.createDirectory(dir);
 				System.out.println(Color.GREEN + "Directorio creado" + Color.RESET);
 			} catch (java.nio.file.NoSuchFileException e) {
-				if (option != null && option.equals("-r")) {
+				if (option != null && option.equals("-p")) {
 					try {
 						createDirectoryRecursive(dir);
 						System.out.println(Color.GREEN + "Directorio creado" + Color.RESET);
@@ -155,7 +155,7 @@ public class Console {
 						System.out.println(Color.RED + "Error: " + ex.getMessage() + Color.RESET);
 					}
 				} else {
-					System.out.println(Color.RED + "Error: " + name + " no existe, para crearlo utilice " + Color.BLUE + "-r" + Color.RED + " como opción" + Color.RESET);
+					System.out.println(Color.RED + "Error: " + name + " no existe, para crearlo utilice " + Color.BLUE + "-p" + Color.RED + " como opción" + Color.RESET);
 				}
 			} catch (Exception e) {
 				System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
