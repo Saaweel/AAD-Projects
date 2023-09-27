@@ -17,7 +17,7 @@ public class Console {
 		Path dir = Paths.get(path);
 
 		if (Files.isDirectory(dir)) {
-			System.out.println(Color.GREEN + "Directory of " + Color.ORANGE + path + Color.RESET);
+			System.out.println(Color.GREEN + "Directorio " + Color.ORANGE + path + Color.RESET);
 			System.out.println("--------------------------------------------------");
 			
 			try {
@@ -34,16 +34,33 @@ public class Console {
 				System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
 			}
 		} else {
-			System.out.println(Color.RED + "Error: " + path + " is not a directory" + Color.RESET);
+			System.out.println(Color.RED + "Error: " + path + " no es un directorio" + Color.RESET);
 		}
 	}
 
-	public void cp(){
+	public void cp(String fromFile, String toDirectory){
+		Path from = Paths.get(fromFile);
 
+		if (Files.exists(from)) {
+			Path to = Paths.get(toDirectory);
+
+			if (Files.isDirectory(to)) {
+				try {
+					Files.copy(from, to.resolve(from.getFileName()));
+					System.out.println(Color.GREEN + "Archivo copiado" + Color.RESET);
+				} catch (Exception e) {
+					System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
+				}
+			} else {
+				System.out.println(Color.RED + "Error: " + toDirectory + " no es un directorio" + Color.RESET);
+			}
+		} else {
+			System.out.println(Color.RED + "Error: " + fromFile + " no existe" + Color.RESET);
+		}
 	}
 
 	public void mv(){
-
+		
 	}
 
 	public void rm(){
@@ -79,13 +96,20 @@ public class Console {
 			if (args.length > 0) {
 				switch (args[0]) {
 					case "ls":
-						if (args.length > 1)
-							console.ls(args[1]);
-						else
+						if (args.length == 1)
 							console.ls(null);
+						else
+							if (args.length == 2)
+								console.ls(args[1]);
+							else
+								System.out.println(Color.RED + "Error de formato: ls <ruta (opcional)>" + Color.RESET);
 						break;
 					case "cp":
-						console.cp();
+					System.out.println(args.length);
+						if (args.length == 3)
+							console.cp(args[1], args[2]);
+						else
+							System.out.println(Color.RED + "Error de formato: cp <archivo> <directorio>" + Color.RESET);
 						break;
 					case "mv":
 						console.mv();
