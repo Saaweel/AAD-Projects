@@ -163,8 +163,19 @@ public class Console {
 		}
 	}
 
-	public void touch(){
+	public void touch(String name){
+		Path file = Paths.get(name);
 
+		if (Files.exists(file)) {
+			System.out.println(Color.RED + "Error: " + name + " ya existe" + Color.RESET);
+		} else {
+			try {
+				Files.createFile(file);
+				System.out.println(Color.GREEN + "Archivo creado" + Color.RESET);
+			} catch (Exception e) {
+				System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
+			}
+		}
 	}
 
 	public void grep(){
@@ -220,15 +231,18 @@ public class Console {
 						break;
 					case "mkdir":
 						if (args.length == 2)
-								console.mkdir(args[1], null);
+							console.mkdir(args[1], null);
+						else
+							if (args.length == 3)
+								console.mkdir(args[1], args[2]);
 							else
-								if (args.length == 3)
-									console.mkdir(args[1], args[2]);
-								else
-									System.out.println(Color.RED + "Error de formato: mkdir <nombre> <opcion (opcional)>" + Color.RESET);
+								System.out.println(Color.RED + "Error de formato: mkdir <nombre> <opcion (opcional)>" + Color.RESET);
 						break;
 					case "touch":
-						console.touch();
+						if (args.length == 2)
+							console.touch(args[1]);
+						else
+							System.out.println(Color.RED + "Error de formato: touch <ruta/nombre>" + Color.RESET);
 						break;
 					case "grep":
 						console.grep();
