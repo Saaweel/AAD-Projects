@@ -10,6 +10,20 @@ import java.util.Scanner;
 public class Console {
 	public static Scanner readS = new Scanner(System.in);
 
+	private void recursiveDelete(Path path) throws Exception {
+		DirectoryStream<Path> stream = Files.newDirectoryStream(path);
+
+		for (Path file : stream) {
+			if (Files.isDirectory(file)) {
+				recursiveDelete(file);
+			} else {
+				Files.delete(file);
+			}
+		}
+
+		Files.delete(path);
+	}
+
 	public void ls(String path){
 		if (path == null) {
 			path = System.getProperty("user.dir");
@@ -86,8 +100,32 @@ public class Console {
 		}
 	}
 
-	public void rm(){
+	public void rm(String path, String option){
+		Path file = Paths.get(path);
 
+		if (Files.exists(file)) {
+			if (Files.isDirectory(file)) {
+				if (option.equals("-r")) {
+					try {
+						recursiveDelete(file);
+						System.out.println(Color.GREEN + "Directorio eliminado" + Color.RESET);
+					} catch (Exception e) {
+						System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
+					}
+				} else {
+					System.out.println(Color.RED + "Error: " + path + " es un directorio, para borrarlo utilice " + Color.BLUE + "-r" + Color.RED + " como opción" + Color.RESET);
+				}
+			} else {
+				try {
+					Files.delete(file);
+					System.out.println(Color.GREEN + "Archivo eliminado" + Color.RESET);
+				} catch (Exception e) {
+					System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
+				}
+			}
+		} else {
+			System.out.println(Color.RED + "Error: " + path + " no existe" + Color.RESET);
+		}
 	}
 
 	public void mkdir(){
@@ -141,7 +179,13 @@ public class Console {
 							System.out.println(Color.RED + "Error de formato: mv <archivo> <directorio/nombre>" + Color.RESET);
 						break;
 					case "rm":
-						console.rm();
+						if (args.length == 2)
+							console.rm(args[1], null);
+						else
+							if (args.length == 3)
+								console.rm(args[1], args[2]);
+							else
+								System.out.println(Color.RED + "Error de formato: rm <ruta> <opcion (opcional)>" + Color.RESET);
 						break;
 					case "mkdir":
 						console.mkdir();
