@@ -24,6 +24,13 @@ public class Console {
 		Files.delete(path);
 	}
 
+	private void createDirectoryRecursive(Path path) throws Exception {
+		if (!Files.exists(path)) {
+			createDirectoryRecursive(path.getParent());
+			Files.createDirectory(path);
+		}
+	}
+
 	public void ls(String path){
 		if (path == null) {
 			path = System.getProperty("user.dir");
@@ -105,7 +112,7 @@ public class Console {
 
 		if (Files.exists(file)) {
 			if (Files.isDirectory(file)) {
-				if (option.equals("-r")) {
+				if (option != null && option.equals("-r")) {
 					try {
 						recursiveDelete(file);
 						System.out.println(Color.GREEN + "Directorio eliminado" + Color.RESET);
@@ -128,8 +135,32 @@ public class Console {
 		}
 	}
 
-	public void mkdir(){
-
+	public void mkdir(String name, String option){
+		Path dir = Paths.get(name);
+		
+		if (Files.exists(dir)) {
+			System.out.println(Color.RED + "Error: " + name + " ya existe" + Color.RESET);
+		} else {
+			try {
+				Files.createDirectory(dir);
+				System.out.println(Color.GREEN + "Directorio creado" + Color.RESET);
+			} catch (java.nio.file.NoSuchFileException e) {
+				if (option != null && option.equals("-r")) {
+					try {
+						createDirectoryRecursive(dir);
+						System.out.println(Color.GREEN + "Directorio creado" + Color.RESET);
+					} catch (java.lang.NullPointerException ex) {
+						System.out.println(Color.RED + "Error: " + dir + " no es una ruta válida" + Color.RESET);
+					} catch (Exception ex) {
+						System.out.println(Color.RED + "Error: " + ex.getMessage() + Color.RESET);
+					}
+				} else {
+					System.out.println(Color.RED + "Error: " + name + " no existe, para crearlo utilice " + Color.BLUE + "-r" + Color.RED + " como opción" + Color.RESET);
+				}
+			} catch (Exception e) {
+				System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
+			}
+		}
 	}
 
 	public void touch(){
@@ -188,7 +219,13 @@ public class Console {
 								System.out.println(Color.RED + "Error de formato: rm <ruta> <opcion (opcional)>" + Color.RESET);
 						break;
 					case "mkdir":
-						console.mkdir();
+						if (args.length == 2)
+								console.mkdir(args[1], null);
+							else
+								if (args.length == 3)
+									console.mkdir(args[1], args[2]);
+								else
+									System.out.println(Color.RED + "Error de formato: mkdir <nombre> <opcion (opcional)>" + Color.RESET);
 						break;
 					case "touch":
 						console.touch();
