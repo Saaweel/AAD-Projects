@@ -186,8 +186,35 @@ public class Console {
 		}
 	}
 
-	public void grep(){
+	public void grep(String pattern, String path){
+		if (path == null) {
+			path = System.getProperty("user.dir");
+		}
 
+		Path dir = Paths.get(path);
+			
+		if (Files.exists(dir) && Files.isDirectory(dir)) {
+			System.out.println(Color.GREEN + "Directorio " + Color.ORANGE + path + Color.RESET);
+			System.out.println("--------------------------------------------------");
+			
+			try {
+				DirectoryStream<Path> stream = Files.newDirectoryStream(dir);
+
+				for (Path file : stream) {
+					if (file.getFileName().toString().contains(pattern)) {
+						if (Files.isDirectory(file)) {
+							System.out.println(Color.BLUE + file.getFileName() + Color.RESET);
+						} else {
+							System.out.println(file.getFileName());
+						}
+					}
+				}
+			} catch (Exception e) {
+				System.out.println(Color.RED + "Error: " + e.getMessage() + Color.RESET);
+			}
+		} else {
+			System.out.println(Color.RED + "Error: " + path + " no es un directorio" + Color.RESET);
+		}
 	} 
 
 	public static void main(String[] args) {
@@ -253,7 +280,13 @@ public class Console {
 							System.out.println(Color.RED + "Error de formato: touch <ruta/nombre>" + Color.RESET);
 						break;
 					case "grep":
-						console.grep();
+						if (args.length == 2)
+							console.grep(args[1], null);
+						else
+							if (args.length == 3)
+								console.grep(args[1], args[2]);
+							else
+								System.out.println(Color.RED + "Error de formato: grep <patron> <ruta (opcional)>" + Color.RESET);
 						break;
 				}
 			}
