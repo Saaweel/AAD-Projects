@@ -32,9 +32,8 @@ public class Console {
 	}
 
 	public void ls(String path){
-		if (path == null) {
+		if (path == null)
 			path = System.getProperty("user.dir");
-		}
 
 		Path dir = Paths.get(path);
 
@@ -186,10 +185,15 @@ public class Console {
 		}
 	}
 
-	public void grep(String pattern, String path){
-		if (path == null) {
+	public void grep(String pattern, String path, String option){
+		if (path == null)
 			path = System.getProperty("user.dir");
-		}
+		else
+			if (path.equals("-e")) {
+				option = "-e";
+				path = System.getProperty("user.dir");
+			}
+		
 
 		Path dir = Paths.get(path);
 			
@@ -201,7 +205,7 @@ public class Console {
 				DirectoryStream<Path> stream = Files.newDirectoryStream(dir);
 
 				for (Path file : stream) {
-					if (file.getFileName().toString().contains(pattern)) {
+					if ((option.equals("-e") && file.getFileName().toString().contains(pattern)) || (!option.equals("-e") && file.getFileName().toString().toLowerCase().contains(pattern.toLowerCase()))) {
 						if (Files.isDirectory(file)) {
 							System.out.println(Color.BLUE + file.getFileName() + Color.RESET);
 						} else {
@@ -280,18 +284,25 @@ public class Console {
 							System.out.println(Color.RED + "Error de formato: touch <ruta/nombre>" + Color.RESET);
 						break;
 					case "grep":
-						if (args.length == 2)
-							console.grep(args[1], null);
-						else
-							if (args.length == 3)
-								console.grep(args[1], args[2]);
-							else
-								System.out.println(Color.RED + "Error de formato: grep <patron> <ruta (opcional)>" + Color.RESET);
+						switch (args.length) {
+							case 2:
+								console.grep(args[1], null, null);
+								break;
+							case 3:
+								console.grep(args[1], args[2], null);
+								break;
+							case 4:
+								console.grep(args[1], args[2], args[3]);
+								break;
+							default:
+								System.out.println(Color.RED + "Error de formato: grep <patron> <ruta (opcional)> <opcion (opcional)>" + Color.RESET);
+								break;
+						}
 						break;
 				}
 			}
 
 			System.out.println("");
-		} while (msg != "exit");
+		} while (!msg.equals("exit"));
 	}
 }
