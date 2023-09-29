@@ -186,6 +186,7 @@ public class Console {
 	}
 
 	public void grep(String pattern, String path, String option){
+		// Puedes usar -e al final del comando para hacer que la busqueda sea exacta (Mayusculas y Minisculas deben coincidir)
 		if (path == null)
 			path = System.getProperty("user.dir");
 		else
@@ -284,6 +285,7 @@ public class Console {
 							System.out.println(Color.RED + "Error de formato: touch <ruta/nombre>" + Color.RESET);
 						break;
 					case "grep":
+						// Puedes usar -e al final del comando para hacer que la busqueda sea exacta (Mayusculas y Minisculas deben coincidir)
 						switch (args.length) {
 							case 2:
 								console.grep(args[1], null, null);
