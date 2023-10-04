@@ -1,10 +1,11 @@
 package com.saaweel;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -82,8 +83,8 @@ public class App {
         return (filed * 100) / students.size();
     }
 
-    private static ArrayList<String> getSubjects(LinkedList<Student> students) {
-        ArrayList<String> subjects = new ArrayList<String>();
+    private static LinkedList<String> getSubjects(LinkedList<Student> students) {
+        LinkedList<String> subjects = new LinkedList<String>();
 
         for (Student s : students) {
             if (!subjects.contains(s.getSubject())) {
@@ -95,15 +96,13 @@ public class App {
     }
 
     public static void main(String [] args) throws IOException {
-        System.out.println("----------------------------------");
-        System.out.println("     LECTURA DE ESTUDIANTES       ");
-        System.out.println("----------------------------------");
         LinkedList<Student> students = new LinkedList<Student>();
 
         File csv = new File("alumnos.csv");
 
         if (csv.exists() && csv.isFile()) {
             BufferedReader reader = new BufferedReader(new FileReader(csv));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("salida.txt"));
 
             String line = reader.readLine();
             
@@ -113,16 +112,16 @@ public class App {
                 students.add(new Student(data[0], data[1], Integer.parseInt(data[2])));
             }
 
-            System.out.println("Nº Total: " + students.size());
-            System.out.println("Promedio: " + getStudentsAverage(students));
-            System.out.println("Moda: " + getStudentsMode(students));
-            System.out.println("Mediana: " + getStudentsMedian(students));
-            System.out.println("Nº Aprobados (%): " + getStudentsApproved(students) + "%");
-            System.out.println("Nº Supensos (%): " + getStudentsFiled(students) + "%");
+            writer.write("N Total: " + students.size() + "\n");
+            writer.write("Promedio: " + getStudentsAverage(students) + "\n");
+            writer.write("Moda: " + getStudentsMode(students) + "\n");
+            writer.write("Mediana: " + getStudentsMedian(students) + "\n");
+            writer.write("N Aprobados (%): " + getStudentsApproved(students) + "%\n");
+            writer.write("N Supensos (%): " + getStudentsFiled(students) + "%\n");
 
-            ArrayList<String> subjects = getSubjects(students);
+            LinkedList<String> subjects = getSubjects(students);
 
-            System.out.println("Listado Especialidades: " + subjects);
+            writer.write("Listado Especialidades: " + subjects + "\n");
 
             for (String subject : subjects) {
                 LinkedList<Student> studentsBySubject = new LinkedList<Student>();
@@ -133,12 +132,16 @@ public class App {
                     }
                 }
 
-                System.out.println("Para " + subject + ":");
-                System.out.println("    Promedio: " + getStudentsAverage(studentsBySubject));
-                System.out.println("    Nº Aprobados (%): " + getStudentsApproved(studentsBySubject) + "%");
-                System.out.println("    Nº Supensos (%): " + getStudentsFiled(studentsBySubject) + "%");
+                writer.write("Para " + subject + ":\n");
+                writer.write("    N Total: " + studentsBySubject.size() + "\n");
+                writer.write("    Promedio: " + getStudentsAverage(studentsBySubject) + "\n");
+                writer.write("    Moda: " + getStudentsMode(studentsBySubject) + "\n");
+                writer.write("    Mediana: " + getStudentsMedian(studentsBySubject) + "\n");
+                writer.write("    N Aprobados (%): " + getStudentsApproved(studentsBySubject) + "%\n");
+                writer.write("    N Supensos (%): " + getStudentsFiled(studentsBySubject) + "%\n");
             }
 
+            writer.close();
             reader.close();
         } else {
             System.out.println("El archivo no existe");
