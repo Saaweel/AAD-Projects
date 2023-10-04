@@ -6,23 +6,14 @@ N Aprobados (%): 60.97560975609756%
 N Supensos (%): 39.02439024390244%
 Listado Especialidades: [Ciencias, Letras, Artes]
 Para Ciencias:
-    N Total: 31
     Promedio: 6.67741935483871
-    Moda: 9
-    Mediana: 7.0
     N Aprobados (%): 77.41935483870968%
     N Supensos (%): 22.580645161290324%
 Para Letras:
-    N Total: 47
     Promedio: 5.170212765957447
-    Moda: 6
-    Mediana: 6.0
     N Aprobados (%): 55.319148936170215%
     N Supensos (%): 44.680851063829785%
 Para Artes:
-    N Total: 45
     Promedio: 5.288888888888889
-    Moda: 8
-    Mediana: 5.0
     N Aprobados (%): 55.55555555555556%
     N Supensos (%): 44.44444444444444%

@@ -133,10 +133,7 @@ public class App {
                 }
 
                 writer.write("Para " + subject + ":\n");
-                writer.write("    N Total: " + studentsBySubject.size() + "\n");
                 writer.write("    Promedio: " + getStudentsAverage(studentsBySubject) + "\n");
-                writer.write("    Moda: " + getStudentsMode(studentsBySubject) + "\n");
-                writer.write("    Mediana: " + getStudentsMedian(studentsBySubject) + "\n");
                 writer.write("    N Aprobados (%): " + getStudentsApproved(studentsBySubject) + "%\n");
                 writer.write("    N Supensos (%): " + getStudentsFiled(studentsBySubject) + "%\n");
             }
