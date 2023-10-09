@@ -9,18 +9,21 @@ Para Ciencias:
     Promedio: 6.67741935483871
     N Aprobados (%): 77.41935483870968%
     N Supensos (%): 22.580645161290324%
+    N Total: 31
     Moda: 9
     Mediana: 7.0
 Para Letras:
     Promedio: 5.170212765957447
     N Aprobados (%): 55.319148936170215%
     N Supensos (%): 44.680851063829785%
+    N Total: 47
     Moda: 6
     Mediana: 6.0
 Para Artes:
     Promedio: 5.288888888888889
     N Aprobados (%): 55.55555555555556%
     N Supensos (%): 44.44444444444444%
+    N Total: 45
     Moda: 8
     Mediana: 5.0
 
