@@ -136,7 +136,35 @@ public class App {
                 writer.write("    Promedio: " + getStudentsAverage(studentsBySubject) + "\n");
                 writer.write("    N Aprobados (%): " + getStudentsApproved(studentsBySubject) + "%\n");
                 writer.write("    N Supensos (%): " + getStudentsFiled(studentsBySubject) + "%\n");
+                /* OPCIONAL 1 (Todas las estadisticas restantes para las especialidades) */
+                writer.write("    Moda: " + getStudentsMode(studentsBySubject) + "\n");
+                writer.write("    Mediana: " + getStudentsMedian(studentsBySubject) + "\n");
             }
+
+            /* OPCIONAL 2 (Numero de veces que se repite un apeliido) */
+            Map <String, Integer> studentsLastNames = new HashMap<String, Integer>();
+
+            for (Student s : students) {
+                String lastname = s.getName().split(" ")[1];
+
+                if (lastname.equals("del") || lastname.equals("de"))
+                    lastname += " " + s.getName().split(" ")[2];
+
+                if (studentsLastNames.containsKey(lastname)) {
+                    studentsLastNames.put(lastname, studentsLastNames.get(lastname) + 1);
+                } else {
+                    studentsLastNames.put(lastname, 1);
+                }
+            }
+
+            writer.write("\nNumero de veces que se repite un apellido:\n");
+            studentsLastNames.forEach((lastname, times) -> {
+                try {
+                    writer.write("    " + lastname + ": " + times + "\n");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            });
 
             writer.close();
             reader.close();

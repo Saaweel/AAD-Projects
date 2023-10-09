@@ -9,11 +9,138 @@ Para Ciencias:
     Promedio: 6.67741935483871
     N Aprobados (%): 77.41935483870968%
     N Supensos (%): 22.580645161290324%
+    Moda: 9
+    Mediana: 7.0
 Para Letras:
     Promedio: 5.170212765957447
     N Aprobados (%): 55.319148936170215%
     N Supensos (%): 44.680851063829785%
+    Moda: 6
+    Mediana: 6.0
 Para Artes:
     Promedio: 5.288888888888889
     N Aprobados (%): 55.55555555555556%
     N Supensos (%): 44.44444444444444%
+    Moda: 8
+    Mediana: 5.0
+
+Numero de veces que se repite un apellido:
+    Artigas: 1
+    Castellanos: 1
+    Fernandez: 1
+    Morell: 1
+    Moraleda: 1
+    Velázquez: 1
+    Tapia: 1
+    Tejada: 1
+    Puga-Ripoll: 1
+    Fabiana: 1
+    César: 1
+    Sancho-Carbonell: 1
+    Macias: 2
+    Isern-Caro: 1
+    Carro: 1
+    Esteban: 1
+    Jerez: 1
+    Serna: 1
+    Ferrando: 1
+    Casado: 1
+    del Cobo: 1
+    Benito: 1
+    Barreda: 1
+    Moreno: 1
+    Aranda-Cabanillas: 1
+    Carmen: 1
+    del Buendía: 1
+    Zabaleta: 1
+    Requena: 1
+    Luís: 1
+    Catalán: 1
+    Cifuentes: 1
+    Mena: 1
+    Lillo: 1
+    de Lago: 1
+    Morante: 1
+    Cabo: 1
+    Pardo: 1
+    Bejarano: 1
+    Puerta: 1
+    del Valcárcel: 1
+    Díaz: 1
+    Guerra: 1
+    Barral: 1
+    Miró: 1
+    Ribera: 1
+    Fernanda: 1
+    Carnero-Escobar: 1
+    Guitart: 1
+    Belda: 1
+    Adora: 1
+    Gimeno: 1
+    Porta: 1
+    Guardiola: 1
+    Bello: 1
+    Gisbert: 1
+    Torrent: 1
+    Vallés: 1
+    Cayetana: 1
+    del Santiago: 1
+    del Ribes: 1
+    Pacheco: 1
+    Tolosa: 1
+    Sierra: 2
+    Manzanares: 1
+    Nogués: 1
+    Manuel: 1
+    Maestre: 1
+    Santamaría: 1
+    Barriga: 1
+    Bárcena: 1
+    Graciana: 1
+    Sanz: 1
+    Espinosa: 1
+    Franco: 1
+    de Aller: 1
+    Cabañas: 1
+    María: 1
+    Serra: 1
+    del Sanz: 1
+    Gálvez: 1
+    Carreño: 1
+    Ortuño: 1
+    Cerro: 1
+    Escalona: 1
+    Luis: 1
+    de Pi: 1
+    Sarmiento: 1
+    Llopis: 1
+    Pellicer: 1
+    Pintor: 1
+    Rebollo: 1
+    Balaguer-Amor: 1
+    Pla: 1
+    Gomez: 1
+    Antón: 1
+    Carmona: 1
+    Higueras: 1
+    Beltran: 1
+    Teresa: 1
+    de Gallardo: 1
+    Viña: 1
+    Bautista: 2
+    Falcón: 1
+    Garriga: 1
+    Elorza-Solera: 1
+    Palma: 1
+    Eustaquio: 1
+    Anselmo: 1
+    Pallarès: 1
+    Villaverde: 1
+    Ramirez: 1
+    Escolano: 1
+    Rivero: 2
+    Baquero: 1
+    del Cornejo: 1
+    del Viña: 1
+    Barranco: 1
+    del Rebollo: 1
