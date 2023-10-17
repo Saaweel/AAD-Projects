@@ -1,0 +1,40 @@
+Categoria: Electrónica
+--------------------
+Product [id=1, name=Samsung TV, price=399.99, stock=50, category=Electrónica]
+Product [id=2, name=Sony PlayStation 5, price=499.99, stock=10, category=Electrónica]
+Product [id=6, name=Apple iPhone 13, price=799.99, stock=20, category=Electrónica]
+Product [id=8, name=Dell Laptop, price=899.99, stock=12, category=Electrónica]
+Product [id=10, name=Samsung Galaxy Watch, price=199.99, stock=18, category=Electrónica]
+Product [id=12, name=Sony Noise-Canceling Headphones, price=149.99, stock=22, category=Electrónica]
+Product [id=14, name=PlayStation DualShock Controller, price=59.99, stock=50, category=Electrónica]
+Product [id=16, name=LG 4K Smart TV, price=599.99, stock=8, category=Electrónica]
+Product [id=19, name=Apple AirPods Pro, price=199.99, stock=30, category=Electrónica]
+Product [id=20, name=Bose SoundLink Speaker, price=149.99, stock=25, category=Electrónica]
+
+N� de productos de la categoria Electrónica: 10
+********************************************************************************
+Categoria: Ropa
+--------------------
+Product [id=3, name=Nike Air Max, price=129.99, stock=30, category=Ropa]
+Product [id=5, name=Adidas Ultraboost, price=149.99, stock=25, category=Ropa]
+Product [id=11, name=Nike Dri-FIT Shirt, price=29.99, stock=45, category=Ropa]
+Product [id=17, name=Nike Running Shoes, price=79.99, stock=20, category=Ropa]
+
+N� de productos de la categoria Ropa: 4
+********************************************************************************
+Categoria: Hogar
+--------------------
+Product [id=4, name=KitchenAid Mixer, price=299.99, stock=15, category=Hogar]
+Product [id=7, name=LG Microwave, price=79.99, stock=40, category=Hogar]
+Product [id=13, name=Keurig Coffee Maker, price=89.99, stock=35, category=Hogar]
+Product [id=18, name=Instant Pot Pressure Cooker, price=129.99, stock=15, category=Hogar]
+
+N� de productos de la categoria Hogar: 4
+********************************************************************************
+Categoria: Alimentación
+--------------------
+Product [id=9, name=Coca-Cola 12-Pack, price=5.99, stock=100, category=Alimentación]
+Product [id=15, name=Hershey's Chocolate Bar, price=1.99, stock=200, category=Alimentación]
+
+N� de productos de la categoria Alimentación: 2
+********************************************************************************
