@@ -1,0 +1,55 @@
+Nombre,NumeroEmpleado,Salario,Departamento,AreaResponsable
+Juan Perez,1001,50000               
+Maria Rodriguez,1002,55000          
+Carlos Gomez,1003,60000,Marketing   
+Luisa Martinez,1004,70000,Marketing 
+Pedro Lopez,1005,80000,Contabilidad
+Laura Sanchez,1006,90000,Contabilidad
+Ana Fernandez,1007,100000,Recursos Humanos,Reclutamiento
+Roberto Torres,1008,110000,Ventas,Ventas globales
+Sofia Diaz,1009,120000,Tecnología,Desarrollo de Software
+Miguel Ramirez,1010,130000,Tecnología,Desarrollo de Software
+Eduardo Vargas,1011,140000,Recursos Humanos,Beneficios
+Gloria Herrera,1012,150000,Recursos Humanos,Capacitación
+Diego Castro,1013,160000,Producción,Manufactura
+Isabel Juarez,1014,170000,Producción,Manufactura
+Sergio Navarro,1015,180000,Producción,Ingeniería de Producción
+Rosa Ortega,1016,190000,Producción,Ingeniería de Producción
+Javier Soto,1017,200000,Marketing,Publicidad
+Fernanda Jimenez,1018,210000,Marketing,Publicidad
+Alejandro Paredes,1019,220000,Tecnología,Infraestructura
+Raquel Rios,1020,230000,Tecnología,Infraestructura
+Andres Mendoza,1021,240000,Tecnología,Ciberseguridad
+Lucia Guerra,1022,250000,Tecnología,Ciberseguridad
+Manuel Reyes,1023,260000,Contabilidad
+Carmen Silva,1024,270000,Contabilidad
+Victor Leon,1025,280000,Recursos Humanos
+Teresa Camacho,1026,290000,Recursos Humanos
+Eduardo Cordero,1027,300000,Ventas
+Rocio Morales,1028,310000,Ventas
+Marcelo Valdez,1029,320000,Ventas
+Pilar Guzman,1030,330000,Ventas
+Lorenzo Herrera,1031,340000,Ventas
+Beatriz Sosa,1032,350000,Ventas
+Jorge Fuentes,1033,360000,Ventas
+Lourdes Pacheco,1034,370000,Ventas
+Antonio Mora,1035,380000,Ventas
+Natalia Vela,1036,390000,Ventas
+Roberto Nava,1037,400000,Ventas
+Silvia Villa,1038,410000,Ventas
+Javier Rosales,1039,420000,Ventas
+Fernando Gomez,2001,75000,Recursos Humanos
+Patricia Martin,2002,80000,Recursos Humanos
+Roberto Diaz,2003,85000,Recursos Humanos
+Luisa Chavez,3001,90000,Contabilidad
+Mariano Torres,3002,95000,Contabilidad
+Carmen Lopez,4001,110000,Producción,Ingeniería de Producción
+Elena Sanchez,4002,115000,Producción,Ingeniería de Producción
+Rafael Rodriguez,5001,120000,Marketing
+Ana Maria Fernandez,5002,130000,Marketing
+Sergio Martinez,6001,140000,Tecnología,Desarrollo de Software
+Andrea Perez,6002,150000,Tecnología,Desarrollo de Software
+Claudia Ramirez,7001,180000,Marketing
+Luis Torres,7002,200000,Marketing
+Juan Rodriguez,8001,250000,Recursos Humanos
+Pedro Mendoza,8002,260000,Recursos Humanos
