@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<proveedores>
+    <proveedor>
+        <id>1</id>
+        <nombre>Copinsa</nombre>
+        <pais>España</pais>
+        <productos>
+            <product>
+                <id>1</id>
+                <name>Cementos</name>
+                <price>12.0</price>
+                <currency>EUR</currency>
+            </product>
+            <product>
+                <id>2</id>
+                <name>Ladrillos</name>
+                <price>15.0</price>
+                <currency>EUR</currency>
+            </product>
+            <product>
+                <id>3</id>
+                <name>Tejas</name>
+                <price>20.0</price>
+                <currency>EUR</currency>
+            </product>
+        </productos>
+    </proveedor>
+    <proveedor>
+        <id>2</id>
+        <nombre>Mariscos Recio</nombre>
+        <pais>España</pais>
+        <productos>
+            <product>
+                <id>7</id>
+                <name>Cigalas</name>
+                <price>12.0</price>
+                <currency>JPY</currency>
+            </product>
+            <product>
+                <id>9</id>
+                <name>Langostinos</name>
+                <price>1.0</price>
+                <currency>EUR</currency>
+            </product>
+            <product>
+                <id>10</id>
+                <name>Rape</name>
+                <price>2.0</price>
+                <currency>GBP</currency>
+            </product>
+            <product>
+                <id>11</id>
+                <name>Almejas</name>
+                <price>3.0</price>
+                <currency>JPY</currency>
+            </product>
+        </productos>
+    </proveedor>
+    <proveedor>
+        <id>3</id>
+        <nombre>Mostruos S.A.</nombre>
+        <pais>Japón</pais>
+        <productos>
+            <product>
+                <id>12</id>
+                <name>Bote de Gritos</name>
+                <price>50.0</price>
+                <currency>JPY</currency>
+            </product>
+        </productos>
+    </proveedor>
+</proveedores>
