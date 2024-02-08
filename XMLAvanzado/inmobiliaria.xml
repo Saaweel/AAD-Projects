@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inmobiliarias>
+    <inmobiliaria>
+        <nombre>Inmobiliaria A</nombre>
+        <direccion>Calle Principal 123</direccion>
+        <ciudad>Ciudad A</ciudad>
+        <clientes>
+            <cliente>
+                <nombre>Juan Pérez</nombre>
+                <tipo>comprador</tipo>
+                <propiedad_id>001</propiedad_id>
+            </cliente>
+            <cliente>
+                <nombre>María González</nombre>
+                <tipo>vendedor</tipo>
+                <propiedad_id>002</propiedad_id>
+            </cliente>
+            <cliente>
+                <nombre>Juan Pérez</nombre>
+                <tipo>comprador</tipo>
+                <propiedad_id>003</propiedad_id>
+            </cliente>
+        </clientes>
+        <propiedades>
+            <propiedad>
+                <id>001</id>
+                <tipo>Casa</tipo>
+                <direccion>Calle 1, Ciudad A</direccion>
+                <habitaciones>3</habitaciones>
+                <baños>2</baños>
+                <precio>250000</precio>
+            </propiedad>
+            <propiedad>
+                <id>002</id>
+                <tipo>Departamento</tipo>
+                <direccion>Avenida 2, Ciudad A</direccion>
+                <habitaciones>2</habitaciones>
+                <baños>1</baños>
+                <precio>150000</precio>
+            </propiedad>
+            <propiedad>
+                <id>003</id>
+                <tipo>Casa</tipo>
+                <direccion>Calle 3, Ciudad A</direccion>
+                <habitaciones>4</habitaciones>
+                <baños>3</baños>
+                <precio>350000</precio>
+            </propiedad>
+        </propiedades>
+    </inmobiliaria>
+    <inmobiliaria>
+        <nombre>Inmobiliaria B</nombre>
+        <direccion>Av. Principal 456</direccion>
+        <ciudad>Ciudad B</ciudad>
+        <clientes>
+            <cliente>
+                <nombre>Luis Martínez</nombre>
+                <tipo>comprador</tipo>
+                <propiedad_id>004</propiedad_id>
+            </cliente>
+            <cliente>
+                <nombre>Carlos Rodríguez</nombre>
+                <tipo>vendedor</tipo>
+                <propiedad_id>005</propiedad_id>
+            </cliente>
+            <cliente>
+                <nombre>Juan Pérez</nombre>
+                <tipo>vendedor</tipo>
+                <propiedad_id>005</propiedad_id>
+            </cliente>
+        </clientes>
+        <propiedades>
+            <propiedad>
+                <id>004</id>
+                <tipo>Casa</tipo>
+                <direccion>Calle 3, Ciudad B</direccion>
+                <habitaciones>4</habitaciones>
+                <baños>3</baños>
+                <precio>350000</precio>
+            </propiedad>
+            <propiedad>
+                <id>005</id>
+                <tipo>Departamento</tipo>
+                <direccion>Av. 4, Ciudad B</direccion>
+                <habitaciones>1</habitaciones>
+                <baños>1</baños>
+                <precio>100000</precio>
+            </propiedad>
+        </propiedades>
+    </inmobiliaria>
+</inmobiliarias>
