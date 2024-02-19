@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "GSON_Complejos_7af2a005",
+            "args": "Expense.json"
+        }
+    ]
+}
