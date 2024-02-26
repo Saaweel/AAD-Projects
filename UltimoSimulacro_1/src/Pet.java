@@ -32,4 +32,13 @@ public class Pet {
 
         collection.insertOne(dbObject);
     }
+
+    public BasicDBObject toBasicDBObject() {
+        BasicDBObject dbObject = new BasicDBObject();
+        
+        dbObject.append("name", this.name);
+        dbObject.append("age", this.age);
+
+        return dbObject;
+    }
 }

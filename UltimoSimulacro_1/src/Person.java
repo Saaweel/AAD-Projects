@@ -82,12 +82,16 @@ public class Person {
         dbObject.append("country", this.country);
         dbObject.append("email", this.email);
 
+        BasicDBObject[] petsObject = new BasicDBObject[this.pets.size()];
+
+        for (int i = 0; i < this.pets.size(); i++) {
+            petsObject[i] = this.pets.get(i).toBasicDBObject();
+        }
+
+        dbObject.append("pets", petsObject);
+
         MongoCollection<BasicDBObject> collection = mongodb.getCollection("persons", BasicDBObject.class);
 
         collection.insertOne(dbObject);
-
-        for (Pet p : this.pets) {
-            p.saveToMongoDB(mongodb);
-        }
     }
 }
