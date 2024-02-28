@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pokemons>
+    <pokemon>
+        <name>Pikachu</name>
+        <type>Electric</type>
+        <description>A yellow mouse Pokémon with electrical powers.</description>
+    </pokemon>
+    <pokemon>
+        <name>Charmander</name>
+        <type>Fire</type>
+        <description>A small, lizard-like Pokémon that is primarily orange with blue eyes and a long flame burning at the tip of its tail.</description>
+        <evolution name="Charmeleon" method="Level 16" />
+        <evolution name="Charizard" method="Level 36" />
+    </pokemon>
+    <pokemon>
+        <name>Squirtle</name>
+        <type>Water</type>
+        <description>A small, turtle-like Pokémon with a blue body and a shell on its back.</description>
+    </pokemon>
+    <pokemon>
+        <name>Bulbasaur</name>
+        <type>Grass/Poison</type>
+        <description>A small, quadruped Pokémon that has blue-green skin with darker patches.</description>
+        <evolution name="Ivysaur" method="Level 16" />
+        <evolution name="Venusaur" method="Level 32" />
+    </pokemon>
+    <pokemon>
+        <name>Jigglypuff</name>
+        <type>Normal/Fairy</type>
+        <description>A round, pink Pokémon that has pointed ears and large, blue eyes.</description>
+    </pokemon>
+    <pokemon>
+        <name>Meowth</name>
+        <type>Normal</type>
+        <description>A small, feline Pokémon with cream-colored fur and a coin-like charm on its forehead.</description>
+    </pokemon>
+    <pokemon>
+        <name>Bellsprout</name>
+        <type>Grass/Poison</type>
+        <description>A plant-like Pokémon with a green, stem-like body and leaves on its head.</description>
+    </pokemon>
+    <pokemon>
+        <name>Gastly</name>
+        <type>Ghost/Poison</type>
+        <description>A ghostly, gaseous Pokémon that appears as a black orb surrounded by a purple haze.</description>
+    </pokemon>
+    <pokemon>
+        <name>Diglett</name>
+        <type>Ground</type>
+        <description>A small, brown Pokémon that appears to be a mole with a round body and a large, pink nose.</description>
+    </pokemon>
+    <pokemon>
+        <name>Psyduck</name>
+        <type>Water</type>
+        <description>A yellow Pokémon resembling a duck or bipedal platypus with a vacant stare.</description>
+    </pokemon>
+    <pokemon>
+        <name>Geodude</name>
+        <type>Rock/Ground</type>
+        <description>A gray, rocky Pokémon with a humanoid shape, muscular arms, and small, black eyes.</description>
+    </pokemon>
+    <pokemon>
+        <name>Pidgey</name>
+        <type>Normal/Flying</type>
+        <description>A small, bird Pokémon with brown plumage on its head and back, and a cream-colored face, underside, and tail.</description>
+    </pokemon>
+    <pokemon>
+        <name>Ekans</name>
+        <type>Poison</type>
+        <description>A purple, serpentine Pokémon with yellow rings around its body.</description>
+    </pokemon>
+    <pokemon>
+        <name>Zubat</name>
+        <type>Poison/Flying</type>
+        <description>A bat-like Pokémon with blue skin, small eyes, and two pairs of wings.</description>
+    </pokemon>
+    <pokemon>
+        <name>Machop</name>
+        <type>Fighting</type>
+        <description>A gray, humanoid Pokémon with large, red eyes and a heavy brow.</description>
+    </pokemon>
+</pokemons>
