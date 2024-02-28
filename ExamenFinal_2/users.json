@@ -1,0 +1,318 @@
+[
+    {
+        "name": "John",
+        "age": 30,
+        "isStudent": false,
+        "height": 175.5,
+        "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "country": "USA"
+        },
+        "contact": {
+            "email": "john@example.com",
+            "phone": "+1-123-456-7890"
+        },
+        "hobbies": ["reading", "hiking", "cooking"],
+        "skills": [
+            {"name": "Programming", "level": "Intermediate"},
+            {"name": "Communication", "level": "Advanced"},
+            {"name": "Problem Solving", "level": "Expert"}
+        ]
+    },
+    {
+        "name": "Alice",
+        "age": 25,
+        "isStudent": true,
+        "height": 162.3,
+        "address": {
+            "street": "456 Elm St",
+            "city": "Smallville",
+            "country": "Canada"
+        },
+        "contact": {
+            "email": "alice@example.com",
+            "phone": "+1-987-654-3210"
+        },
+        "hobbies": ["painting", "gardening", "photography"],
+        "skills": [
+            {"name": "Design", "level": "Advanced"},
+            {"name": "Writing", "level": "Intermediate"},
+            {"name": "Problem Solving", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "Michael",
+        "age": 35,
+        "isStudent": false,
+        "height": 180.0,
+        "address": {
+            "street": "789 Oak St",
+            "city": "Villageton",
+            "country": "UK"
+        },
+        "contact": {
+            "email": "michael@example.com",
+            "phone": "+44-123-456-7890"
+        },
+        "hobbies": ["running", "traveling", "playing guitar"],
+        "skills": [
+            {"name": "Management", "level": "Expert"},
+            {"name": "Leadership", "level": "Advanced"},
+            {"name": "Programming", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "Sophia",
+        "age": 28,
+        "isStudent": false,
+        "height": 167.8,
+        "address": {
+            "street": "567 Pine St",
+            "city": "Greenville",
+            "country": "USA"
+        },
+        "contact": {
+            "email": "sophia@example.com",
+            "phone": "+1-555-123-4567"
+        },
+        "hobbies": ["yoga", "cooking", "traveling"],
+        "skills": [
+            {"name": "Marketing", "level": "Advanced"},
+            {"name": "Social Media Management", "level": "Intermediate"},
+            {"name": "Event Planning", "level": "Expert"}
+        ]
+    },
+    {
+        "name": "Daniel",
+        "age": 33,
+        "isStudent": false,
+        "height": 185.2,
+        "address": {
+            "street": "890 Maple St",
+            "city": "Riverside",
+            "country": "Canada"
+        },
+        "contact": {
+            "email": "daniel@example.com",
+            "phone": "+1-888-987-6543"
+        },
+        "hobbies": ["photography", "reading", "hiking"],
+        "skills": [
+            {"name": "Photography", "level": "Expert"},
+            {"name": "Writing", "level": "Intermediate"},
+            {"name": "Problem Solving", "level": "Advanced"}
+        ]
+    },
+    {
+        "name": "Emily",
+        "age": 26,
+        "isStudent": true,
+        "height": 170.5,
+        "address": {
+            "street": "234 Oak St",
+            "city": "Springfield",
+            "country": "USA"
+        },
+        "contact": {
+            "email": "emily@example.com",
+            "phone": "+1-777-555-1234"
+        },
+        "hobbies": ["painting", "biking", "gardening"],
+        "skills": [
+            {"name": "Art", "level": "Advanced"},
+            {"name": "Writing", "level": "Intermediate"},
+            {"name": "Problem Solving", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "William",
+        "age": 31,
+        "isStudent": false,
+        "height": 178.3,
+        "address": {
+            "street": "345 Elm St",
+            "city": "Oakville",
+            "country": "Canada"
+        },
+        "contact": {
+            "email": "william@example.com",
+            "phone": "+1-666-987-6543"
+        },
+        "hobbies": ["playing guitar", "traveling", "cooking"],
+        "skills": [
+            {"name": "Music", "level": "Intermediate"},
+            {"name": "Problem Solving", "level": "Advanced"},
+            {"name": "Leadership", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "Olivia",
+        "age": 29,
+        "isStudent": false,
+        "height": 163.7,
+        "address": {
+            "street": "678 Pine St",
+            "city": "Mapleton",
+            "country": "UK"
+        },
+        "contact": {
+            "email": "olivia@example.com",
+            "phone": "+44-123-987-6543"
+        },
+        "hobbies": ["yoga", "reading", "painting"],
+        "skills": [
+            {"name": "Teaching", "level": "Expert"},
+            {"name": "Communication", "level": "Advanced"},
+            {"name": "Problem Solving", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "James",
+        "age": 27,
+        "isStudent": true,
+        "height": 175.9,
+        "address": {
+            "street": "456 Maple St",
+            "city": "Riverside",
+            "country": "USA"
+        },
+        "contact": {
+            "email": "james@example.com",
+            "phone": "+1-999-777-5555"
+        },
+        "hobbies": ["playing basketball", "cooking", "traveling"],
+        "skills": [
+            {"name": "Sports", "level": "Intermediate"},
+            {"name": "Problem Solving", "level": "Advanced"},
+            {"name": "Leadership", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "Emma",
+        "age": 24,
+        "isStudent": true,
+        "height": 168.2,
+        "address": {
+            "street": "567 Oak St",
+            "city": "Springfield",
+            "country": "USA"
+        },
+        "contact": {
+            "email": "emma@example.com",
+            "phone": "+1-777-888-9999"
+        },
+        "hobbies": ["drawing", "reading", "biking"],
+        "skills": [
+            {"name": "Art", "level": "Advanced"},
+            {"name": "Writing", "level": "Intermediate"},
+            {"name": "Problem Solving", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "Benjamin",
+        "age": 32,
+        "isStudent": false,
+        "height": 182.6,
+        "address": {
+            "street": "789 Pine St",
+            "city": "Oakville",
+            "country": "Canada"
+        },
+        "contact": {
+            "email": "benjamin@example.com",
+            "phone": "+1-666-555-4444"
+        },
+        "hobbies": ["playing piano", "traveling", "cooking"],
+        "skills": [
+            {"name": "Music", "level": "Intermediate"},
+            {"name": "Problem Solving", "level": "Advanced"},
+            {"name": "Leadership", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "Isabella",
+        "age": 28,
+        "isStudent": false,
+        "height": 166.4,
+        "address": {
+            "street": "890 Maple St",
+            "city": "Villageton",
+            "country": "UK"
+        },
+        "contact": {
+            "email": "isabella@example.com",
+            "phone": "+44-123-234-5678"
+        },
+        "hobbies": ["dancing", "reading", "gardening"],
+        "skills": [
+            {"name": "Dance", "level": "Advanced"},
+            {"name": "Communication", "level": "Intermediate"},
+            {"name": "Problem Solving", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "Mason",
+        "age": 26,
+        "isStudent": true,
+        "height": 176.8,
+        "address": {
+            "street": "123 Elm St",
+            "city": "Smallville",
+            "country": "Canada"
+        },
+        "contact": {
+            "email": "mason@example.com",
+            "phone": "+1-888-999-0000"
+        },
+        "hobbies": ["playing soccer", "traveling", "cooking"],
+        "skills": [
+            {"name": "Sports", "level": "Intermediate"},
+            {"name": "Problem Solving", "level": "Advanced"},
+            {"name": "Leadership", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "Ava",
+        "age": 30,
+        "isStudent": false,
+        "height": 164.5,
+        "address": {
+            "street": "345 Oak St",
+            "city": "Greenville",
+            "country": "USA"
+        },
+        "contact": {
+            "email": "ava@example.com",
+            "phone": "+1-555-666-7777"
+        },
+        "hobbies": ["yoga", "reading", "painting"],
+        "skills": [
+            {"name": "Teaching", "level": "Expert"},
+            {"name": "Communication", "level": "Advanced"},
+            {"name": "Problem Solving", "level": "Intermediate"}
+        ]
+    },
+    {
+        "name": "Logan",
+        "age": 29,
+        "isStudent": true,
+        "height": 177.3,
+        "address": {
+            "street": "567 Pine St",
+            "city": "Mapleton",
+            "country": "UK"
+        },
+        "contact": {
+            "email": "logan@example.com",
+            "phone": "+44-123-345-6789"
+        },
+        "hobbies": ["playing video games", "traveling", "reading"],
+        "skills": [
+            {"name": "Gaming", "level": "Intermediate"},
+            {"name": "Problem Solving", "level": "Advanced"},
+            {"name": "Leadership", "level": "Intermediate"}
+        ]
+    }
+]
+

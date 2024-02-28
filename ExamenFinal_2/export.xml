@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users>
+    <user>
+        <name>John</name>
+        <age>30</age>
+        <student>false</student>
+        <height>175.5</height>
+        <skill>
+            <street>123 Main St</street>
+            <city>Anytown</city>
+            <country>USA</country>
+        </skill>
+        <contact email="john@example.com" phone="+1-123-456-7890"/>
+        <hobbies>
+            <hobbie>reading</hobbie>
+            <hobbie>hiking</hobbie>
+            <hobbie>cooking</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Intermediate" name="Programming"/>
+            <skill level="Advanced" name="Communication"/>
+            <skill level="Expert" name="Problem Solving"/>
+        </skills>
+    </user>
+    <user>
+        <name>Alice</name>
+        <age>25</age>
+        <student>true</student>
+        <height>162.3</height>
+        <skill>
+            <street>456 Elm St</street>
+            <city>Smallville</city>
+            <country>Canada</country>
+        </skill>
+        <contact email="alice@example.com" phone="+1-987-654-3210"/>
+        <hobbies>
+            <hobbie>painting</hobbie>
+            <hobbie>gardening</hobbie>
+            <hobbie>photography</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Advanced" name="Design"/>
+            <skill level="Intermediate" name="Writing"/>
+            <skill level="Intermediate" name="Problem Solving"/>
+        </skills>
+    </user>
+    <user>
+        <name>Michael</name>
+        <age>35</age>
+        <student>false</student>
+        <height>180.0</height>
+        <skill>
+            <street>789 Oak St</street>
+            <city>Villageton</city>
+            <country>UK</country>
+        </skill>
+        <contact email="michael@example.com" phone="+44-123-456-7890"/>
+        <hobbies>
+            <hobbie>running</hobbie>
+            <hobbie>traveling</hobbie>
+            <hobbie>playing guitar</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Expert" name="Management"/>
+            <skill level="Advanced" name="Leadership"/>
+            <skill level="Intermediate" name="Programming"/>
+        </skills>
+    </user>
+    <user>
+        <name>Sophia</name>
+        <age>28</age>
+        <student>false</student>
+        <height>167.8</height>
+        <skill>
+            <street>567 Pine St</street>
+            <city>Greenville</city>
+            <country>USA</country>
+        </skill>
+        <contact email="sophia@example.com" phone="+1-555-123-4567"/>
+        <hobbies>
+            <hobbie>yoga</hobbie>
+            <hobbie>cooking</hobbie>
+            <hobbie>traveling</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Advanced" name="Marketing"/>
+            <skill level="Intermediate" name="Social Media Management"/>
+            <skill level="Expert" name="Event Planning"/>
+        </skills>
+    </user>
+    <user>
+        <name>Daniel</name>
+        <age>33</age>
+        <student>false</student>
+        <height>185.2</height>
+        <skill>
+            <street>890 Maple St</street>
+            <city>Riverside</city>
+            <country>Canada</country>
+        </skill>
+        <contact email="daniel@example.com" phone="+1-888-987-6543"/>
+        <hobbies>
+            <hobbie>photography</hobbie>
+            <hobbie>reading</hobbie>
+            <hobbie>hiking</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Expert" name="Photography"/>
+            <skill level="Intermediate" name="Writing"/>
+            <skill level="Advanced" name="Problem Solving"/>
+        </skills>
+    </user>
+    <user>
+        <name>Emily</name>
+        <age>26</age>
+        <student>true</student>
+        <height>170.5</height>
+        <skill>
+            <street>234 Oak St</street>
+            <city>Springfield</city>
+            <country>USA</country>
+        </skill>
+        <contact email="emily@example.com" phone="+1-777-555-1234"/>
+        <hobbies>
+            <hobbie>painting</hobbie>
+            <hobbie>biking</hobbie>
+            <hobbie>gardening</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Advanced" name="Art"/>
+            <skill level="Intermediate" name="Writing"/>
+            <skill level="Intermediate" name="Problem Solving"/>
+        </skills>
+    </user>
+    <user>
+        <name>William</name>
+        <age>31</age>
+        <student>false</student>
+        <height>178.3</height>
+        <skill>
+            <street>345 Elm St</street>
+            <city>Oakville</city>
+            <country>Canada</country>
+        </skill>
+        <contact email="william@example.com" phone="+1-666-987-6543"/>
+        <hobbies>
+            <hobbie>playing guitar</hobbie>
+            <hobbie>traveling</hobbie>
+            <hobbie>cooking</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Intermediate" name="Music"/>
+            <skill level="Advanced" name="Problem Solving"/>
+            <skill level="Intermediate" name="Leadership"/>
+        </skills>
+    </user>
+    <user>
+        <name>Olivia</name>
+        <age>29</age>
+        <student>false</student>
+        <height>163.7</height>
+        <skill>
+            <street>678 Pine St</street>
+            <city>Mapleton</city>
+            <country>UK</country>
+        </skill>
+        <contact email="olivia@example.com" phone="+44-123-987-6543"/>
+        <hobbies>
+            <hobbie>yoga</hobbie>
+            <hobbie>reading</hobbie>
+            <hobbie>painting</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Expert" name="Teaching"/>
+            <skill level="Advanced" name="Communication"/>
+            <skill level="Intermediate" name="Problem Solving"/>
+        </skills>
+    </user>
+    <user>
+        <name>James</name>
+        <age>27</age>
+        <student>true</student>
+        <height>175.9</height>
+        <skill>
+            <street>456 Maple St</street>
+            <city>Riverside</city>
+            <country>USA</country>
+        </skill>
+        <contact email="james@example.com" phone="+1-999-777-5555"/>
+        <hobbies>
+            <hobbie>playing basketball</hobbie>
+            <hobbie>cooking</hobbie>
+            <hobbie>traveling</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Intermediate" name="Sports"/>
+            <skill level="Advanced" name="Problem Solving"/>
+            <skill level="Intermediate" name="Leadership"/>
+        </skills>
+    </user>
+    <user>
+        <name>Emma</name>
+        <age>24</age>
+        <student>true</student>
+        <height>168.2</height>
+        <skill>
+            <street>567 Oak St</street>
+            <city>Springfield</city>
+            <country>USA</country>
+        </skill>
+        <contact email="emma@example.com" phone="+1-777-888-9999"/>
+        <hobbies>
+            <hobbie>drawing</hobbie>
+            <hobbie>reading</hobbie>
+            <hobbie>biking</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Advanced" name="Art"/>
+            <skill level="Intermediate" name="Writing"/>
+            <skill level="Intermediate" name="Problem Solving"/>
+        </skills>
+    </user>
+    <user>
+        <name>Benjamin</name>
+        <age>32</age>
+        <student>false</student>
+        <height>182.6</height>
+        <skill>
+            <street>789 Pine St</street>
+            <city>Oakville</city>
+            <country>Canada</country>
+        </skill>
+        <contact email="benjamin@example.com" phone="+1-666-555-4444"/>
+        <hobbies>
+            <hobbie>playing piano</hobbie>
+            <hobbie>traveling</hobbie>
+            <hobbie>cooking</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Intermediate" name="Music"/>
+            <skill level="Advanced" name="Problem Solving"/>
+            <skill level="Intermediate" name="Leadership"/>
+        </skills>
+    </user>
+    <user>
+        <name>Isabella</name>
+        <age>28</age>
+        <student>false</student>
+        <height>166.4</height>
+        <skill>
+            <street>890 Maple St</street>
+            <city>Villageton</city>
+            <country>UK</country>
+        </skill>
+        <contact email="isabella@example.com" phone="+44-123-234-5678"/>
+        <hobbies>
+            <hobbie>dancing</hobbie>
+            <hobbie>reading</hobbie>
+            <hobbie>gardening</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Advanced" name="Dance"/>
+            <skill level="Intermediate" name="Communication"/>
+            <skill level="Intermediate" name="Problem Solving"/>
+        </skills>
+    </user>
+    <user>
+        <name>Mason</name>
+        <age>26</age>
+        <student>true</student>
+        <height>176.8</height>
+        <skill>
+            <street>123 Elm St</street>
+            <city>Smallville</city>
+            <country>Canada</country>
+        </skill>
+        <contact email="mason@example.com" phone="+1-888-999-0000"/>
+        <hobbies>
+            <hobbie>playing soccer</hobbie>
+            <hobbie>traveling</hobbie>
+            <hobbie>cooking</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Intermediate" name="Sports"/>
+            <skill level="Advanced" name="Problem Solving"/>
+            <skill level="Intermediate" name="Leadership"/>
+        </skills>
+    </user>
+    <user>
+        <name>Ava</name>
+        <age>30</age>
+        <student>false</student>
+        <height>164.5</height>
+        <skill>
+            <street>345 Oak St</street>
+            <city>Greenville</city>
+            <country>USA</country>
+        </skill>
+        <contact email="ava@example.com" phone="+1-555-666-7777"/>
+        <hobbies>
+            <hobbie>yoga</hobbie>
+            <hobbie>reading</hobbie>
+            <hobbie>painting</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Expert" name="Teaching"/>
+            <skill level="Advanced" name="Communication"/>
+            <skill level="Intermediate" name="Problem Solving"/>
+        </skills>
+    </user>
+    <user>
+        <name>Logan</name>
+        <age>29</age>
+        <student>true</student>
+        <height>177.3</height>
+        <skill>
+            <street>567 Pine St</street>
+            <city>Mapleton</city>
+            <country>UK</country>
+        </skill>
+        <contact email="logan@example.com" phone="+44-123-345-6789"/>
+        <hobbies>
+            <hobbie>playing video games</hobbie>
+            <hobbie>traveling</hobbie>
+            <hobbie>reading</hobbie>
+        </hobbies>
+        <skills>
+            <skill level="Intermediate" name="Gaming"/>
+            <skill level="Advanced" name="Problem Solving"/>
+            <skill level="Intermediate" name="Leadership"/>
+        </skills>
+    </user>
+</users>
